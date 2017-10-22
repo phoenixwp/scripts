@@ -3,11 +3,12 @@ touch /tmp/ls.log
 while true
 do
 count=1
+max_count=24
 id=1
-while [ $count -le 24 ]
+while [ $count -le $max_count ]
 do
 #sleep 20
-for i in `seq 1 24`;
+for i in `seq 1 $max_count`;
 do
 	if [ "$i" -ge 10 ]
         then 
